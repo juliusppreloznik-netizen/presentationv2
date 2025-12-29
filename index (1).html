@@ -1,0 +1,2017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Install the $75K/Month Client Attraction Funnel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .slideshow-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            padding: 40px 60px;
+            animation: fadeIn 0.5s;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .slide > * {
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .nav-button {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            font-size: 48px;
+            padding: 20px 25px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background 0.3s;
+            border-radius: 8px;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        .slide-counter {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .title-slide {
+            text-align: center;
+        }
+
+        .title-slide h1 {
+            font-size: clamp(36px, 6vw, 72px);
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .title-slide .highlight {
+            color: #22c55e;
+        }
+
+        .title-slide .subtitle {
+            font-size: 24px;
+            color: #9ca3af;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #22c55e;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+        }
+
+        .content-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: clamp(20px, 3vw, 40px);
+            margin: 20px 0;
+        }
+
+        .content-box.green {
+            background: rgba(34, 197, 94, 0.05);
+            border-color: rgba(34, 197, 94, 0.3);
+        }
+
+        .content-box.blue {
+            background: rgba(59, 130, 246, 0.05);
+            border-color: rgba(59, 130, 246, 0.3);
+        }
+
+        .content-box.purple {
+            background: rgba(168, 85, 247, 0.05);
+            border-color: rgba(168, 85, 247, 0.3);
+        }
+
+        .content-box.orange {
+            background: rgba(249, 115, 22, 0.05);
+            border-color: rgba(249, 115, 22, 0.3);
+        }
+
+        .content-box.red {
+            background: rgba(239, 68, 68, 0.05);
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .section-label.green {
+            background: #22c55e;
+            color: white;
+        }
+
+        .section-label.blue {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .section-label.purple {
+            background: #a855f7;
+            color: white;
+        }
+
+        .section-label.orange {
+            background: #f97316;
+            color: white;
+        }
+
+        .section-label.red {
+            background: #ef4444;
+            color: white;
+        }
+
+        h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-size: clamp(24px, 3.5vw, 32px);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: clamp(18px, 2.5vw, 24px);
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .outcome-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .outcome-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .outcome-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: #22c55e;
+            margin-bottom: 16px;
+        }
+
+        .outcome-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .outcome-desc {
+            font-size: 14px;
+            color: #9ca3af;
+            line-height: 1.6;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .stat-card {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 64px;
+            font-weight: 800;
+            color: #22c55e;
+            margin-bottom: 12px;
+        }
+
+        .stat-label {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .stat-desc {
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .revenue-display {
+            text-align: center;
+            padding: 50px;
+            background: rgba(34, 197, 94, 0.1);
+            border: 2px solid #22c55e;
+            border-radius: 16px;
+            margin: 40px 0;
+        }
+
+        .revenue-amount {
+            font-size: 80px;
+            font-weight: 800;
+            color: #22c55e;
+            margin-bottom: 16px;
+        }
+
+        .revenue-label {
+            font-size: 24px;
+            color: #d1d5db;
+        }
+
+        .problem-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .problem-list li {
+            padding: 18px 24px;
+            margin: 12px 0;
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #ef4444;
+            border-radius: 0 8px 8px 0;
+            font-size: 18px;
+            color: #d1d5db;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .pillar-card {
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            padding: 35px;
+        }
+
+        .pillar-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #3b82f6;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .pillar-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .pillar-desc {
+            font-size: 16px;
+            color: #9ca3af;
+            line-height: 1.6;
+        }
+
+        .market-card {
+            background: rgba(168, 85, 247, 0.05);
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            border-radius: 12px;
+            padding: 35px;
+            margin: 25px 0;
+        }
+
+        .market-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .market-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #a855f7;
+            margin-bottom: 12px;
+        }
+
+        .market-problem {
+            font-size: 18px;
+            color: #d1d5db;
+            margin-bottom: 20px;
+        }
+
+        .market-value {
+            background: rgba(34, 197, 94, 0.15);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #22c55e;
+        }
+
+        .market-value-amount {
+            font-size: 32px;
+            font-weight: 800;
+            color: #22c55e;
+        }
+
+        .math-box {
+            background: rgba(34, 197, 94, 0.1);
+            border: 2px solid #22c55e;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 30px 0;
+        }
+
+        .math-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 18px;
+        }
+
+        .math-row:last-child {
+            border-bottom: none;
+            padding-top: 24px;
+            margin-top: 12px;
+            border-top: 2px solid #22c55e;
+        }
+
+        .math-label {
+            color: #9ca3af;
+        }
+
+        .math-value {
+            font-weight: 700;
+            color: #22c55e;
+            font-size: 24px;
+        }
+
+        .timeline {
+            margin: 40px 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 25px 0;
+        }
+
+        .timeline-day {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+
+        .timeline-day-number {
+            font-size: 36px;
+            font-weight: 800;
+        }
+
+        .timeline-day-label {
+            font-size: 12px;
+            color: #d1d5db;
+        }
+
+        .timeline-content {
+            flex: 1;
+        }
+
+        .timeline-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .timeline-desc {
+            font-size: 14px;
+            color: #9ca3af;
+            line-height: 1.6;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .comparison-bad {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .comparison-good {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .comparison-label {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .comparison-label.bad {
+            color: #ef4444;
+        }
+
+        .comparison-label.good {
+            color: #22c55e;
+        }
+
+        .comparison-content {
+            font-size: 18px;
+            color: #d1d5db;
+            line-height: 1.6;
+        }
+
+        .value-stack {
+            margin: 30px 0;
+        }
+
+        .value-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            margin: 12px 0;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            border-left: 4px solid #22c55e;
+        }
+
+        .value-item-name {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .value-item-price {
+            font-size: 24px;
+            font-weight: 800;
+            color: #22c55e;
+        }
+
+        .value-total {
+            margin-top: 30px;
+            padding: 30px;
+            background: rgba(34, 197, 94, 0.15);
+            border: 2px solid #22c55e;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .value-total-label {
+            font-size: 20px;
+            color: #9ca3af;
+            margin-bottom: 12px;
+        }
+
+        .value-total-amount {
+            font-size: 64px;
+            font-weight: 800;
+            color: #22c55e;
+        }
+
+        .checklist {
+            list-style: none;
+            margin: 30px 0;
+        }
+
+        .checklist li {
+            padding: 16px 20px;
+            margin: 12px 0;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            position: relative;
+            padding-left: 60px;
+            font-size: 16px;
+            color: #d1d5db;
+        }
+
+        .checklist li::before {
+            content: "✓";
+            position: absolute;
+            left: 20px;
+            color: #22c55e;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .checklist.negative li::before {
+            content: "✕";
+            color: #ef4444;
+        }
+
+        .cta-box {
+            text-align: center;
+            padding: 60px;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(16, 185, 129, 0.1));
+            border: 2px solid #22c55e;
+            border-radius: 16px;
+            margin: 40px 0;
+        }
+
+        .cta-title {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .cta-subtitle {
+            font-size: 20px;
+            color: #9ca3af;
+            margin-bottom: 30px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .quote-box {
+            background: rgba(249, 115, 22, 0.1);
+            border-left: 4px solid #f97316;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .quote-text {
+            font-size: 20px;
+            font-style: italic;
+            color: #d1d5db;
+            line-height: 1.8;
+        }
+
+        .big-number {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .big-number-value {
+            font-size: 96px;
+            font-weight: 800;
+            color: #22c55e;
+            margin-bottom: 16px;
+        }
+
+        .big-number-label {
+            font-size: 24px;
+            color: #d1d5db;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1200px) {
+            .slide {
+                padding: 30px 40px;
+            }
+            
+            .outcome-grid,
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .pillars-grid,
+            .comparison-grid,
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .slide {
+                padding: 20px;
+            }
+            
+            .problem-list li {
+                font-size: 16px;
+                padding: 14px 18px;
+            }
+            
+            .revenue-amount,
+            .big-number-value {
+                font-size: clamp(48px, 10vw, 80px);
+            }
+            
+            .stat-value {
+                font-size: clamp(40px, 8vw, 64px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active">
+            <div class="title-slide">
+                <span class="badge">THE COMPLETE SYSTEM</span>
+                <h1>How to Install the <span class="highlight">$75K/Month</span><br>Client Attraction Funnel</h1>
+                <p class="subtitle">The System That Turns $1 Into $7 on Autopilot While You Sleep</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Three Outcomes -->
+        <div class="slide">
+            <span class="section-label green">WHAT YOU'LL DISCOVER</span>
+            <h2>Three Specific Outcomes</h2>
+            
+            <div class="outcome-grid">
+                <div class="outcome-card">
+                    <div class="outcome-number">1</div>
+                    <div class="outcome-title">10-20 Qualified Calls/Day</div>
+                    <div class="outcome-desc">For just $30 in ad spend. Prospects with $2K-$4K to invest, not broke window-shoppers</div>
+                </div>
+                
+                <div class="outcome-card">
+                    <div class="outcome-number">2</div>
+                    <div class="outcome-title">2-3X Price Increase</div>
+                    <div class="outcome-desc">Same service, higher pricing. No product changes, no added deliverables, no price resistance</div>
+                </div>
+                
+                <div class="outcome-card">
+                    <div class="outcome-number">3</div>
+                    <div class="outcome-title">30-40% Dead Lead Revival</div>
+                    <div class="outcome-desc">Backend system that converts "lost" leads sitting in your CRM without you lifting a finger</div>
+                </div>
+            </div>
+
+            <div class="content-box green" style="margin-top: 50px; text-align: center;">
+                <h3 style="margin-bottom: 20px;">The Client Attraction Funnel</h3>
+                <p style="font-size: 20px; color: #d1d5db;">Four core pillars that scale you from $7K-$10K/month to $30K-$75K/month in 90 days</p>
+            </div>
+        </div>
+
+        <!-- Slide 3: Daniel's Results -->
+        <div class="slide">
+            <span class="section-label green">CASE STUDY</span>
+            <h2>Daniel's Transformation</h2>
+            
+            <div class="comparison-grid">
+                <div class="comparison-bad">
+                    <div class="comparison-label bad">✕ BEFORE</div>
+                    <div class="comparison-content">
+                        <p style="margin-bottom: 16px;">→ $7,000/month revenue</p>
+                        <p style="margin-bottom: 16px;">→ Working 12-hour days</p>
+                        <p style="margin-bottom: 16px;">→ Competing on price</p>
+                        <p style="margin-bottom: 16px;">→ Charging $300-$400/client</p>
+                        <p>→ Attracting broke leads</p>
+                    </div>
+                </div>
+                
+                <div class="comparison-good">
+                    <div class="comparison-label good">✓ AFTER (60 DAYS)</div>
+                    <div class="comparison-content">
+                        <p style="margin-bottom: 16px;">→ $43,860/month revenue</p>
+                        <p style="margin-bottom: 16px;">→ Working LESS hours</p>
+                        <p style="margin-bottom: 16px;">→ Premium positioning</p>
+                        <p style="margin-bottom: 16px;">→ Charging $1,500-$2,000/client</p>
+                        <p>→ Qualified, high-intent leads</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="revenue-display" style="margin-top: 50px;">
+                <div class="revenue-amount">$43,860</div>
+                <div class="revenue-label">In a Single Month • Same Product • Same Service</div>
+            </div>
+        </div>
+
+        <!-- Slide 4: The Numbers -->
+        <div class="slide">
+            <span class="section-label green">SYSTEM METRICS</span>
+            <h2>Current Performance Across Clients</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">$7.76</div>
+                    <div class="stat-label">Cost Per Call</div>
+                    <div class="stat-desc">Qualified prospects who show up ready to talk</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">70%</div>
+                    <div class="stat-label">Show Rate</div>
+                    <div class="stat-desc">vs. 30-40% industry average</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">35%</div>
+                    <div class="stat-label">Close Rate</div>
+                    <div class="stat-desc">More than 1 in 3 calls = paying client</div>
+                </div>
+            </div>
+
+            <div class="content-box green" style="margin-top: 50px;">
+                <h3 style="text-align: center; margin-bottom: 30px;">The Scaling Paradox</h3>
+                <div class="grid-2">
+                    <div>
+                        <h4 style="color: #ef4444; margin-bottom: 16px;">❌ Most Businesses</h4>
+                        <p style="color: #9ca3af; font-size: 16px;">Scale ad spend → Cost per lead increases → Quality drops → ROI tanks</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #22c55e; margin-bottom: 16px;">✓ Client Attraction Funnel</h4>
+                        <p style="color: #9ca3af; font-size: 16px;">Scale ad spend → Facebook AI gets smarter → Quality improves → ROI increases</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Speed to Results -->
+        <div class="slide">
+            <span class="section-label green">SPEED TO RESULTS</span>
+            <h2>How Fast Does This Actually Work?</h2>
+            
+            <div class="content-box green">
+                <div class="grid-2">
+                    <div>
+                        <div class="big-number-value" style="font-size: 72px; margin-bottom: 12px;">< 24hrs</div>
+                        <div class="big-number-label" style="font-size: 20px; margin-bottom: 30px;">First Client Closed</div>
+                        <p style="color: #9ca3af; font-size: 16px;">Launched funnel on the 12th at 11am. Closed $1,500 client next day at 5pm.</p>
+                    </div>
+                    <div>
+                        <div class="big-number-value" style="font-size: 72px; margin-bottom: 12px; color: #3b82f6;">7-10</div>
+                        <div class="big-number-label" style="font-size: 20px; margin-bottom: 30px;">Days to System Live</div>
+                        <p style="color: #9ca3af; font-size: 16px;">Complete funnel, CRM, ads, and backend built and ready to launch in your business.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-box" style="margin-top: 40px;">
+                <p class="quote-text">"One client started booking so many calls he had to hire a sales rep just to keep up. He removed himself from sales completely and focused exclusively on scaling."</p>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <h3 style="color: #22c55e; margin-bottom: 16px;">It's Entirely Up To You</h3>
+                <p style="font-size: 20px; color: #d1d5db;">Want 5 calls/day? Done. Want 20 calls/day? Also done. The system just delivers.</p>
+            </div>
+        </div>
+
+        <!-- Slide 6: The Problem -->
+        <div class="slide">
+            <span class="section-label red">THE PROBLEM</span>
+            <h2>The Credit & Funding Market Reality</h2>
+            
+            <div class="content-box red">
+                <h3 style="margin-bottom: 30px; text-align: center;">The Saturation Trap</h3>
+                <ul class="problem-list">
+                    <li>"5-day removals!" — Everyone says it</li>
+                    <li>"$50K in funding, 0% interest!" — They've heard it before</li>
+                    <li>"Fix your credit in 30 days!" — Categorized with everyone else</li>
+                    <li>Prospects have 4-5 other options saved</li>
+                    <li>They've probably been burned before</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="text-align: center; margin-bottom: 30px;">What This Creates:</h3>
+                <div class="grid-2">
+                    <div class="content-box red">
+                        <h4 style="color: #ef4444; margin-bottom: 16px;">Low Price Elasticity</h4>
+                        <p style="color: #9ca3af; font-size: 16px;">Forced to charge $200-$400 when you should be charging $1,500-$2,000</p>
+                    </div>
+                    <div class="content-box red">
+                        <h4 style="color: #ef4444; margin-bottom: 16px;">Preconceived Notions</h4>
+                        <p style="color: #9ca3af; font-size: 16px;">"Another credit repair person. It probably doesn't work. Someone else can do it cheaper."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 30px; background: rgba(239, 68, 68, 0.1); border-radius: 12px; border: 2px solid #ef4444;">
+                <h3 style="color: #ef4444; font-size: 32px;">The problem isn't your product.</h3>
+                <h3 style="color: #f97316; font-size: 32px; margin-top: 12px;">The problem is your POSITIONING.</h3>
+            </div>
+        </div>
+
+        <!-- Slide 7: Market Repositioning Intro -->
+        <div class="slide">
+            <span class="section-label purple">THE SOLUTION</span>
+            <h2>Market Repositioning Strategy</h2>
+            
+            <div class="content-box purple" style="text-align: center; margin-bottom: 40px;">
+                <h3 style="font-size: 36px; margin-bottom: 30px;">Stop Selling Credit Repair</h3>
+                <p style="font-size: 24px; color: #d1d5db; margin-bottom: 20px;">Start selling the <span style="color: #a855f7; font-weight: 700;">OUTCOME</span> they actually care about</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="comparison-bad">
+                    <div class="comparison-label bad">✕ OLD WAY</div>
+                    <div class="comparison-content">
+                        <p style="margin-bottom: 12px; font-size: 20px;">Selling to: People who want credit repair</p>
+                        <p style="color: #9ca3af;">→ Broke prospects</p>
+                        <p style="color: #9ca3af;">→ Price shopping</p>
+                        <p style="color: #9ca3af;">→ Skeptical</p>
+                        <p style="color: #9ca3af;">→ Comparing you to $200-$400 options</p>
+                    </div>
+                </div>
+                
+                <div class="comparison-good">
+                    <div class="comparison-label good">✓ NEW WAY</div>
+                    <div class="comparison-content">
+                        <p style="margin-bottom: 12px; font-size: 20px;">Selling to: Specific markets with expensive problems</p>
+                        <p style="color: #9ca3af;">→ Investment property buyers</p>
+                        <p style="color: #9ca3af;">→ Business owners needing capital</p>
+                        <p style="color: #9ca3af;">→ Home buyers saving on interest</p>
+                        <p style="color: #9ca3af;">→ Paying $2,000-$4,000 gladly</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(168, 85, 247, 0.1); border: 2px solid #a855f7; border-radius: 12px;">
+                <p style="font-size: 28px; color: #a855f7; font-weight: 700;">You're not competing with credit repair anymore.</p>
+                <p style="font-size: 28px; color: #d1d5db; margin-top: 12px;">You're competing with NO ONE.</p>
+            </div>
+        </div>
+
+        <!-- Slide 8: Market 1 - Real Estate -->
+        <div class="slide">
+            <span class="section-label purple">MARKET #1</span>
+            <h2>Real Estate Investors</h2>
+            
+            <div class="market-card">
+                <div class="market-icon">🏘️</div>
+                <div class="market-title">Investment Property Acquisition</div>
+                <div class="market-problem">Investor with 580-640 credit can't get approved for $300K property loan. Bank requires 680 minimum.</div>
+                
+                <div style="margin: 30px 0;">
+                    <h4 style="margin-bottom: 16px;">The Math:</h4>
+                    <p style="color: #d1d5db; font-size: 16px; line-height: 1.8;">
+                        $300K property @ 8-12% cash-on-cash return<br>
+                        = $24K-$36K/year in cash flow<br>
+                        = $240K-$360K over 10 years
+                    </p>
+                </div>
+
+                <div class="market-value">
+                    <p style="font-size: 18px; color: #d1d5db; margin-bottom: 12px;">Is it worth $2,000 to unlock access to a</p>
+                    <div class="market-value-amount">$300,000 Asset?</div>
+                    <p style="font-size: 16px; color: #9ca3af; margin-top: 12px;">That generates $240K-$360K over 10 years? Of course.</p>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <p class="quote-text">You're not selling credit repair. You're selling the ability to acquire their next property.</p>
+            </div>
+        </div>
+
+        <!-- Slide 9: Market 2 - Business Owners -->
+        <div class="slide">
+            <span class="section-label purple">MARKET #2</span>
+            <h2>Business Owners</h2>
+            
+            <div class="market-card">
+                <div class="market-icon">💼</div>
+                <div class="market-title">Business Credit & Funding</div>
+                <div class="market-problem">$300K-$1M+ revenue business limited by cash flow. Personal credit of 620 blocks $50K-$100K business credit approval.</div>
+                
+                <div style="margin: 30px 0;">
+                    <h4 style="margin-bottom: 16px;">What They Could Do With $50K-$100K:</h4>
+                    <ul style="list-style: none; color: #d1d5db;">
+                        <li style="margin: 12px 0; padding-left: 20px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #22c55e;">→</span>
+                            $50K marketing = $200K new revenue
+                        </li>
+                        <li style="margin: 12px 0; padding-left: 20px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #22c55e;">→</span>
+                            $75K inventory = $150K sales
+                        </li>
+                        <li style="margin: 12px 0; padding-left: 20px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #22c55e;">→</span>
+                            Hire 2 salespeople @ $300K/year each in sales
+                        </li>
+                        <li style="margin: 12px 0; padding-left: 20px; position: relative;">
+                            <span style="position: absolute; left: 0; color: #22c55e;">→</span>
+                            Open second location doing $50K/month
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="market-value">
+                    <p style="font-size: 18px; color: #d1d5db; margin-bottom: 12px;">Is it worth $3,000 to unlock</p>
+                    <div class="market-value-amount">$50K-$100K Capital?</div>
+                    <p style="font-size: 16px; color: #9ca3af; margin-top: 12px;">That generates 3X-10X returns? Absolutely.</p>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <p class="quote-text">You're not selling credit repair. You're selling business growth and scale.</p>
+            </div>
+        </div>
+
+        <!-- Slide 10: Market 3 - Home Buyers -->
+        <div class="slide">
+            <span class="section-label purple">MARKET #3</span>
+            <h2>Home Buyers</h2>
+            
+            <div class="market-card">
+                <div class="market-icon">🏡</div>
+                <div class="market-title">Interest Rate Savings</div>
+                <div class="market-problem">First-time buyer with 620 credit score gets destroyed by higher interest rate on $400K home purchase.</div>
+                
+                <div style="margin: 30px 0;">
+                    <h4 style="margin-bottom: 20px;">The Interest Rate Impact:</h4>
+                    <div class="comparison-grid">
+                        <div style="background: rgba(34, 197, 94, 0.1); padding: 20px; border-radius: 8px; border: 1px solid #22c55e;">
+                            <p style="color: #22c55e; font-weight: 700; margin-bottom: 12px;">720 Credit Score</p>
+                            <p style="color: #d1d5db;">6.5% interest rate</p>
+                            <p style="color: #d1d5db;">$2,528/month</p>
+                            <p style="color: #9ca3af; font-size: 14px; margin-top: 8px;">$509,680 total interest (30yr)</p>
+                        </div>
+                        <div style="background: rgba(239, 68, 68, 0.1); padding: 20px; border-radius: 8px; border: 1px solid #ef4444;">
+                            <p style="color: #ef4444; font-weight: 700; margin-bottom: 12px;">620 Credit Score</p>
+                            <p style="color: #d1d5db;">7.5% interest rate</p>
+                            <p style="color: #d1d5db;">$2,797/month</p>
+                            <p style="color: #9ca3af; font-size: 14px; margin-top: 8px;">$606,920 total interest (30yr)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="market-value">
+                    <p style="font-size: 18px; color: #d1d5db; margin-bottom: 12px;">Is it worth $2,500 to save</p>
+                    <div class="market-value-amount">$97,240</div>
+                    <p style="font-size: 16px; color: #9ca3af; margin-top: 12px;">Over the life of the loan? The easiest decision they'll ever make.</p>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                <p class="quote-text">You're not selling credit repair. You're selling financial freedom and $100K in savings.</p>
+            </div>
+        </div>
+
+        <!-- Slide 11: Unique Mechanism Overview -->
+        <div class="slide">
+            <span class="section-label purple">PILLAR 1</span>
+            <h2>The Unique Mechanism</h2>
+            
+            <div class="content-box purple">
+                <h3 style="text-align: center; margin-bottom: 40px;">Market Repositioning + Unique Mechanism = Differentiation</h3>
+                
+                <div class="grid-2" style="margin-top: 40px;">
+                    <div>
+                        <h4 style="color: #a855f7; margin-bottom: 16px;">Step 1: Choose Market</h4>
+                        <p style="color: #9ca3af; margin-bottom: 24px;">Real estate investors, business owners, or home buyers</p>
+                        
+                        <h4 style="color: #a855f7; margin-bottom: 16px;">Step 2: Identify Problem</h4>
+                        <p style="color: #9ca3af; margin-bottom: 24px;">Their painful, expensive problem that credit is blocking</p>
+                    </div>
+                    <div>
+                        <h4 style="color: #a855f7; margin-bottom: 16px;">Step 3: Create Mechanism</h4>
+                        <p style="color: #9ca3af; margin-bottom: 24px;">Specific system with specific name for their specific problem</p>
+                        
+                        <h4 style="color: #a855f7; margin-bottom: 16px;">Step 4: Build Differentiation</h4>
+                        <p style="color: #9ca3af;">Features, processes designed for THEIR situation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="margin-bottom: 30px; text-align: center;">Example Unique Mechanisms:</h3>
+                <div class="grid-2">
+                    <div class="content-box purple">
+                        <h4 style="color: #a855f7;">Real Estate Investors</h4>
+                        <p style="color: #d1d5db; font-size: 16px;">"The Investment Property Approval Protocol"</p>
+                    </div>
+                    <div class="content-box purple">
+                        <h4 style="color: #a855f7;">Business Owners</h4>
+                        <p style="color: #d1d5db; font-size: 16px;">"The Business Credit Acceleration System"</p>
+                    </div>
+                </div>
+                <div class="content-box purple" style="max-width: 600px; margin: 20px auto 0;">
+                    <h4 style="color: #a855f7; text-align: center;">Home Buyers</h4>
+                    <p style="color: #d1d5db; font-size: 16px; text-align: center;">"The Interest Rate Optimization Protocol"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: What Unique Mechanism Does -->
+        <div class="slide">
+            <span class="section-label purple">THE POWER</span>
+            <h2>What The Unique Mechanism Achieves</h2>
+            
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-number">1</div>
+                    <div class="pillar-title">Eliminate ALL Competition</div>
+                    <div class="pillar-desc">You're not "another credit repair person." You're The Investment Property Approval Specialist. Category of one.</div>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-number">2</div>
+                    <div class="pillar-title">Create Price Elasticity</div>
+                    <div class="pillar-desc">Not selling credit repair for $300. Selling investment property approval for $2,000. Business funding for $3,000. Interest savings for $2,500.</div>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-number">3</div>
+                    <div class="pillar-title">Crush Skepticism</div>
+                    <div class="pillar-desc">Can't put you in "credit repair that doesn't work" bucket. You're different. Fresh slate. Clean ear. Changes everything.</div>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-number">4</div>
+                    <div class="pillar-title">Premium Positioning</div>
+                    <div class="pillar-desc">You're THE specialist for their specific market. The expert. The only logical solution.</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px; padding: 40px; background: rgba(168, 85, 247, 0.15); border: 2px solid #a855f7; border-radius: 12px;">
+                <p style="font-size: 32px; font-weight: 700; color: #a855f7;">This is just the foundation.</p>
+                <p style="font-size: 24px; color: #d1d5db; margin-top: 16px;">Now let's build the system that delivers these prospects to you.</p>
+            </div>
+        </div>
+
+        <!-- Slide 13: Four Pillars Overview -->
+        <div class="slide">
+            <span class="section-label blue">THE SYSTEM</span>
+            <h2>The 4 Pillars of The Client Attraction Funnel</h2>
+            
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-number">1</div>
+                    <div class="pillar-title">Unique Mechanism</div>
+                    <div class="pillar-desc">Market repositioning that breaks categorization, creates price elasticity, positions you as the specialist</div>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-number">2</div>
+                    <div class="pillar-title">Paid Ads System</div>
+                    <div class="pillar-desc">Facebook AI targeting that delivers qualified leads from your chosen market at scale</div>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-number">3</div>
+                    <div class="pillar-title">Authority Positioning Funnel</div>
+                    <div class="pillar-desc">Pre-sells prospects before they get on calls so they show up already convinced</div>
+                </div>
+                
+                <div class="pillar-card">
+                    <div class="pillar-number">4</div>
+                    <div class="pillar-title">Backend Selling System</div>
+                    <div class="pillar-desc">Nurtures and converts the 60-70% who aren't ready to buy immediately</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <p style="font-size: 24px; color: #d1d5db;">Let's break down each pillar in detail...</p>
+            </div>
+        </div>
+
+        <!-- Slide 14: Pillar 2 Intro -->
+        <div class="slide">
+            <span class="section-label blue">PILLAR 2</span>
+            <h2>The Paid Ads System</h2>
+            
+            <div class="content-box blue">
+                <h3 style="text-align: center; margin-bottom: 30px;">The Qualified Lead Engine</h3>
+                <div class="grid-2" style="margin-top: 40px;">
+                    <div>
+                        <h4 style="margin-bottom: 16px; color: #3b82f6;">Three Jobs:</h4>
+                        <ul style="list-style: none; color: #d1d5db; font-size: 18px;">
+                            <li style="margin: 16px 0; padding-left: 30px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">1.</span>
+                                Filter OUT tire-kickers and broke leads
+                            </li>
+                            <li style="margin: 16px 0; padding-left: 30px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">2.</span>
+                                Bring in ONLY qualified prospects
+                            </li>
+                            <li style="margin: 16px 0; padding-left: 30px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">3.</span>
+                                Do it for $20-$50/day profitably
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="margin-bottom: 16px; color: #3b82f6;">The Secret:</h4>
+                        <p style="color: #d1d5db; font-size: 18px; line-height: 1.8;">We don't just run ads and hope. We feed Facebook data from your ACTUAL closed deals so it gets smarter over time.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="big-number" style="margin-top: 50px;">
+                <div class="big-number-value">$7.76</div>
+                <div class="big-number-label">Average Cost Per Qualified Call</div>
+            </div>
+        </div>
+
+        <!-- Slide 15: How Facebook AI Works -->
+        <div class="slide">
+            <span class="section-label blue">THE MECHANISM</span>
+            <h2>How Facebook's AI Targeting Works</h2>
+            
+            <div class="content-box blue">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-day">
+                            <div class="timeline-day-number">1</div>
+                            <div class="timeline-day-label">COLLECT</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Prospect Books Call From Ad</div>
+                            <div class="timeline-desc">They fill out form with qualifying questions: revenue, cash flow, credit score, investment power, use of funds. All saved in CRM.</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #8b5cf6, #a855f7);">
+                            <div class="timeline-day-number">2</div>
+                            <div class="timeline-day-label">ENRICH</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">After Call, Add Close Data</div>
+                            <div class="timeline-desc">How much they paid, one-call close or multi-call, call quality, everything tracked at contact level.</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #a855f7, #ec4899);">
+                            <div class="timeline-day-number">3</div>
+                            <div class="timeline-day-label">ANALYZE</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Identify Ideal Client Profile</div>
+                            <div class="timeline-desc">Take your 5 best closes. What patterns? Average revenue? Industry? Use of funds? Score range?</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #ec4899, #22c55e);">
+                            <div class="timeline-day-number">4</div>
+                            <div class="timeline-day-label">OPTIMIZE</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Feed Data Back to Facebook</div>
+                            <div class="timeline-desc">Use Zapier + Conversion API. Facebook says "Got it. Let me find more people who look EXACTLY like these 5."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; padding: 30px; background: rgba(59, 130, 246, 0.15); border: 2px solid #3b82f6; border-radius: 12px;">
+                <p style="font-size: 28px; color: #3b82f6; font-weight: 700;">This is why more spend = BETTER ROI</p>
+                <p style="font-size: 20px; color: #d1d5db; margin-top: 12px;">You're feeding Facebook a blueprint of your perfect customer</p>
+            </div>
+        </div>
+
+        <!-- Slide 16: The Math - Realistic -->
+        <div class="slide">
+            <span class="section-label green">THE MATH</span>
+            <h2>Why Profitability Is Practically Guaranteed</h2>
+            
+            <div class="math-box">
+                <h3 style="text-align: center; margin-bottom: 30px; color: #22c55e;">Realistic Scenario (Our Actual Averages)</h3>
+                
+                <div class="math-row">
+                    <span class="math-label">Cost per booked call:</span>
+                    <span class="math-value">$7</span>
+                </div>
+                
+                <div class="math-row">
+                    <span class="math-label">Show rate:</span>
+                    <span class="math-value">70%</span>
+                </div>
+                
+                <div class="math-row">
+                    <span class="math-label">Cost per SHOW:</span>
+                    <span class="math-value">$10</span>
+                </div>
+                
+                <div class="math-row">
+                    <span class="math-label">Close rate:</span>
+                    <span class="math-value">20%</span>
+                </div>
+                
+                <div class="math-row">
+                    <span class="math-label">Calls needed for 1 client:</span>
+                    <span class="math-value">5 showed calls</span>
+                </div>
+                
+                <div class="math-row">
+                    <span class="math-label">Customer Acquisition Cost:</span>
+                    <span class="math-value">$50</span>
+                </div>
+                
+                <div class="math-row" style="border-top: 3px solid #22c55e; padding-top: 24px; margin-top: 20px;">
+                    <span class="math-label" style="font-size: 20px;">Client pays you:</span>
+                    <span class="math-value" style="font-size: 32px;">$2,000</span>
+                </div>
+                
+                <div class="math-row" style="border: none;">
+                    <span class="math-label" style="font-size: 20px;">Profit per client:</span>
+                    <span class="math-value" style="font-size: 32px;">$1,950</span>
+                </div>
+                
+                <div class="math-row" style="border: none;">
+                    <span class="math-label" style="font-size: 20px;">ROI:</span>
+                    <span class="math-value" style="font-size: 32px;">3,900%</span>
+                </div>
+            </div>
+
+            <div class="revenue-display" style="margin-top: 40px;">
+                <div style="font-size: 20px; color: #9ca3af; margin-bottom: 16px;">$30/day ad spend ($900/month) =</div>
+                <div class="revenue-amount">$36,000</div>
+                <div class="revenue-label">Monthly Revenue • 18 Clients • $35,100 Net Profit</div>
+            </div>
+        </div>
+
+        <!-- Slide 17: The Math - Worst Case -->
+        <div class="slide">
+            <span class="section-label orange">STRESS TEST</span>
+            <h2>Worst Case Scenario (Still Profitable)</h2>
+            
+            <div class="content-box orange">
+                <p style="text-align: center; font-size: 20px; color: #d1d5db; margin-bottom: 40px;">Let's assume EVERYTHING goes wrong...</p>
+            </div>
+
+            <div class="math-box" style="background: rgba(249, 115, 22, 0.1); border-color: #f97316;">
+                <h3 style="text-align: center; margin-bottom: 30px; color: #f97316;">Terrible Numbers (2X worse than average)</h3>
+                
+                <div class="math-row">
+                    <span class="math-label">Cost per booked call:</span>
+                    <span class="math-value" style="color: #f97316;">$15</span>
+                </div>
+                
+                <div class="math-row">
+                    <span class="math-label">Show rate:</span>
+                    <span class="math-value" style="color: #f97316;">50%</span>
+                </div>
+                
+                <div class="math-row">
+                    <span class="math-label">Cost per SHOW:</span>
+                    <span class="math-value" style="color: #f97316;">$30</span>
+                </div>
+                
+                <div class="math-row">
+                    <span class="math-label">Close rate:</span>
+                    <span class="math-value" style="color: #f97316;">10%</span>
+                </div>
+                
+                <div class="math-row">
+                    <span class="math-label">Customer Acquisition Cost:</span>
+                    <span class="math-value" style="color: #f97316;">$300</span>
+                </div>
+                
+                <div class="math-row" style="border-top: 3px solid #f97316; padding-top: 24px; margin-top: 20px;">
+                    <span class="math-label" style="font-size: 20px;">Client pays you:</span>
+                    <span class="math-value" style="font-size: 32px; color: #f97316;">$1,500</span>
+                </div>
+                
+                <div class="math-row" style="border: none;">
+                    <span class="math-label" style="font-size: 20px;">Profit per client:</span>
+                    <span class="math-value" style="font-size: 32px; color: #f97316;">$1,200</span>
+                </div>
+                
+                <div class="math-row" style="border: none;">
+                    <span class="math-label" style="font-size: 20px;">ROI:</span>
+                    <span class="math-value" style="font-size: 32px; color: #f97316;">400%</span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; padding: 40px; background: rgba(34, 197, 94, 0.1); border: 2px solid #22c55e; border-radius: 12px;">
+                <p style="font-size: 28px; color: #22c55e; font-weight: 700; margin-bottom: 16px;">Even when everything goes wrong...</p>
+                <p style="font-size: 24px; color: #d1d5db;">You're still making $3,600 profit from $900 ad spend</p>
+                <p style="font-size: 20px; color: #9ca3af; margin-top: 12px;">Still 4X-ing your money. The unit economics are THAT favorable.</p>
+            </div>
+        </div>
+
+        <!-- Slide 18: Pillar 3 - Authority Funnel -->
+        <div class="slide">
+            <span class="section-label purple">PILLAR 3</span>
+            <h2>The Authority Positioning Funnel</h2>
+            
+            <div class="content-box purple">
+                <h3 style="text-align: center; margin-bottom: 40px;">From "Just Another Credit Repair Person" → THE Expert</h3>
+            </div>
+
+            <div class="comparison-grid">
+                <div class="comparison-bad">
+                    <div class="comparison-label bad">✕ MOST PEOPLE DO</div>
+                    <div class="comparison-content">
+                        <p style="font-size: 18px; margin-bottom: 20px;">Ad → Calendar Link</p>
+                        <p style="color: #9ca3af; margin-bottom: 12px;">→ No trust built</p>
+                        <p style="color: #9ca3af; margin-bottom: 12px;">→ 30% show rates</p>
+                        <p style="color: #9ca3af; margin-bottom: 12px;">→ Skeptical prospects</p>
+                        <p style="color: #9ca3af;">→ Low close rates</p>
+                    </div>
+                </div>
+                
+                <div class="comparison-good">
+                    <div class="comparison-label good">✓ AUTHORITY FUNNEL DOES</div>
+                    <div class="comparison-content">
+                        <p style="font-size: 18px; margin-bottom: 20px;">Ad → Landing Page → VSL → Calendar</p>
+                        <p style="color: #9ca3af; margin-bottom: 12px;">→ Trust built BEFORE booking</p>
+                        <p style="color: #9ca3af; margin-bottom: 12px;">→ 70% show rates</p>
+                        <p style="color: #9ca3af; margin-bottom: 12px;">→ Pre-sold prospects</p>
+                        <p style="color: #9ca3af;">→ 35% close rates</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="margin-bottom: 30px; text-align: center;">4 Critical Elements:</h3>
+                <div class="grid-2">
+                    <div class="content-box purple">
+                        <h4 style="color: #a855f7;">1. Specific Pain Headline</h4>
+                        <p style="color: #d1d5db; font-size: 14px;">"Stuck at $10K/month because you're attracting broke leads?"</p>
+                    </div>
+                    <div class="content-box purple">
+                        <h4 style="color: #a855f7;">2. Unique Mechanism Intro</h4>
+                        <p style="color: #d1d5db; font-size: 14px;">"The Client Attraction Funnel — attract clients who GLADLY pay $2K-$4K"</p>
+                    </div>
+                    <div class="content-box purple">
+                        <h4 style="color: #a855f7;">3. Social Proof</h4>
+                        <p style="color: #d1d5db; font-size: 14px;">"Daniel: $7K → $43K in 60 days. Cost per call: $7.76. Show rate: 70%"</p>
+                    </div>
+                    <div class="content-box purple">
+                        <h4 style="color: #a855f7;">4. Value First (VSL)</h4>
+                        <p style="color: #d1d5db; font-size: 14px;">20min training that educates, positions methodology, creates urgency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 19: Pillar 4 - Backend System -->
+        <div class="slide">
+            <span class="section-label orange">PILLAR 4</span>
+            <h2>The Backend Selling System</h2>
+            
+            <div class="content-box orange">
+                <h3 style="text-align: center; margin-bottom: 20px;">The Secret Weapon Most Are Missing</h3>
+                <p style="text-align: center; font-size: 20px; color: #d1d5db;">60-70% of prospects aren't ready to buy immediately. This system converts them.</p>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="margin-bottom: 30px;">The Nurture Sequence:</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #f97316, #fb923c); width: 80px; height: 80px;">
+                            <div class="timeline-day-number" style="font-size: 28px;">1</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Immediate Email</div>
+                            <div class="timeline-desc">Confirmation + introduce Unique Mechanism + plant seed about transformation</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #fb923c, #fbbf24); width: 80px; height: 80px;">
+                            <div class="timeline-day-number" style="font-size: 28px;">2</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">SMS Follow-Up (1hr later)</div>
+                            <div class="timeline-desc">Build anticipation about specific transformation they'll learn</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #fbbf24, #a855f7); width: 80px; height: 80px;">
+                            <div class="timeline-day-number" style="font-size: 28px;">3</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Post-Training Sequences</div>
+                            <div class="timeline-desc">Different paths: Watched (reinforce + case studies + urgency) vs Didn't Watch (replay available)</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #a855f7, #ec4899); width: 80px; height: 80px;">
+                            <div class="timeline-day-number" style="font-size: 28px;">4</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Personalized Loom Video</div>
+                            <div class="timeline-desc">For engaged but not booked: "Hey [Name], saw you watched but haven't booked. Here's why this could get you to [goal]..."</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #ec4899, #3b82f6); width: 80px; height: 80px;">
+                            <div class="timeline-day-number" style="font-size: 28px;">5</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Retargeting Ads</div>
+                            <div class="timeline-desc">Stay in front of them on Facebook/Instagram with more proof, more reasons to act</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 20: The Machine -->
+        <div class="slide">
+            <span class="section-label green">HOW IT WORKS</span>
+            <h2>When The Machine Is Running</h2>
+            
+            <div class="content-box green">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); width: 90px; height: 90px;">
+                            <div class="timeline-day-label" style="font-size: 10px; margin-bottom: 4px;">MONDAY</div>
+                            <div class="timeline-day-number" style="font-size: 32px;">AM</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">You Wake Up</div>
+                            <div class="timeline-desc">6 new leads came in overnight from Facebook ads introducing your Unique Mechanism</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #8b5cf6, #a855f7); width: 90px; height: 90px;">
+                            <div class="timeline-day-label" style="font-size: 10px; margin-bottom: 4px;">TUESDAY</div>
+                            <div class="timeline-day-number" style="font-size: 32px;">PM</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Calls Booked</div>
+                            <div class="timeline-desc">3 of 6 leads watched VSL, landed on landing page, got nurtured, now they've booked calls</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #a855f7, #22c55e); width: 90px; height: 90px;">
+                            <div class="timeline-day-label" style="font-size: 10px; margin-bottom: 4px;">WEDNESDAY</div>
+                            <div class="timeline-day-number" style="font-size: 32px;">✓</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Calls Close</div>
+                            <div class="timeline-desc">2 of 3 become clients. Pre-sold, pre-qualified, already convinced. Call is just logistics. $4,000 in revenue.</div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #22c55e, #10b981); width: 90px; height: 90px;">
+                            <div class="timeline-day-label" style="font-size: 10px; margin-bottom: 4px;">WEEKS</div>
+                            <div class="timeline-day-number" style="font-size: 28px;">2-3</div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-title">Dead Leads Convert</div>
+                            <div class="timeline-desc">The 3 who didn't book immediately? Backend system nurtured them. One books and closes. Another $2,000.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="math-box" style="margin-top: 50px;">
+                <div class="math-row">
+                    <span class="math-label">Weekly ad spend ($30/day):</span>
+                    <span class="math-value">$210</span>
+                </div>
+                <div class="math-row">
+                    <span class="math-label">Revenue from immediate closes:</span>
+                    <span class="math-value">$4,000</span>
+                </div>
+                <div class="math-row" style="border-top: 2px solid #22c55e; padding-top: 20px; margin-top: 16px;">
+                    <span class="math-label" style="font-size: 22px;">Return on Ad Spend:</span>
+                    <span class="math-value" style="font-size: 36px;">19X</span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; padding: 30px; background: rgba(34, 197, 94, 0.15); border: 2px solid #22c55e; border-radius: 12px;">
+                <p style="font-size: 28px; color: #22c55e; font-weight: 700;">This is happening every single week.</p>
+            </div>
+        </div>
+
+        <!-- Slide 21: DFY Advantage -->
+        <div class="slide">
+            <span class="section-label blue">THE ADVANTAGE</span>
+            <h2>Why You Can't Build This Yourself</h2>
+            
+            <div class="content-box red">
+                <h3 style="color: #ef4444; margin-bottom: 30px; text-align: center;">The DIY Trap</h3>
+                <ul class="checklist negative">
+                    <li>Spend months watching YouTube videos on Facebook ads</li>
+                    <li>Buy courses on CRM automation you never finish</li>
+                    <li>Try to figure out GoHighLevel, ClickFunnels, etc.</li>
+                    <li>Test ad copy that flops because you missed critical elements</li>
+                    <li>Automation breaks and you don't know why</li>
+                    <li>Funnel doesn't convert like you thought</li>
+                    <li>Meanwhile competitors who went DFY are at $30K-$40K/month</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="text-align: center; margin-bottom: 30px; color: #ef4444;">You Don't Know What You Don't Know</h3>
+                <div class="grid-2">
+                    <div class="content-box red">
+                        <h4>What You Think You Missed:</h4>
+                        <p style="color: #d1d5db; font-size: 16px;">"Hmm, ads don't work for me. I'll try something else."</p>
+                    </div>
+                    <div class="content-box green">
+                        <h4>What You Actually Missed:</h4>
+                        <p style="color: #d1d5db; font-size: 14px; line-height: 1.8;">
+                            → Conversion API not set up<br>
+                            → Ad account structure wrong<br>
+                            → Creative framework missing Unique Mechanism<br>
+                            → No Authority Positioning Funnel<br>
+                            → No backend nurturing<br>
+                            → Can't scale without destroying metrics
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(239, 68, 68, 0.1); border: 2px solid #ef4444; border-radius: 12px;">
+                <p style="font-size: 32px; color: #ef4444; font-weight: 700;">This keeps you stuck at $10K/month for YEARS.</p>
+            </div>
+        </div>
+
+        <!-- Slide 22: What Gets Built -->
+        <div class="slide">
+            <span class="section-label green">DONE FOR YOU</span>
+            <h2>What We Build For You</h2>
+            
+            <div class="value-stack">
+                <div class="value-item">
+                    <div class="value-item-name">Complete Paid Ads System</div>
+                    <div class="value-item-price">$5,000</div>
+                </div>
+                <div style="padding: 0 30px; margin: 12px 0;">
+                    <p style="color: #9ca3af; font-size: 14px;">→ Proven ad scripts generating $75K/month RIGHT NOW<br>→ Conversion API setup<br>→ Proper ad account structure<br>→ Retargeting campaigns</p>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-item-name">Authority Positioning Funnel</div>
+                    <div class="value-item-price">$8,000</div>
+                </div>
+                <div style="padding: 0 30px; margin: 12px 0;">
+                    <p style="color: #9ca3af; font-size: 14px;">→ High-converting landing pages with copy written<br>→ VSL scripts positioning you as THE expert<br>→ Lead magnets<br>→ Booking page optimization</p>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-item-name">Backend Selling System</div>
+                    <div class="value-item-price">$5,000</div>
+                </div>
+                <div style="padding: 0 30px; margin: 12px 0;">
+                    <p style="color: #9ca3af; font-size: 14px;">→ Email sequences for every scenario<br>→ SMS campaigns<br>→ CRM with stages, tags, tracking<br>→ Personalized video frameworks</p>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-item-name">Complete Sales System</div>
+                    <div class="value-item-price">$3,000</div>
+                </div>
+                <div style="padding: 0 30px; margin: 12px 0;">
+                    <p style="color: #9ca3af; font-size: 14px;">→ Proven scripts closing at $2K-$4K<br>→ Objection handling frameworks<br>→ Urgency techniques<br>→ Call analysis</p>
+                </div>
+
+                <div class="value-item">
+                    <div class="value-item-name">Weekly 1-on-1 Coaching (Year)</div>
+                    <div class="value-item-price">$15,000</div>
+                </div>
+
+                <div class="value-total">
+                    <div class="value-total-label">Total Value If Built Separately:</div>
+                    <div class="value-total-amount">$38,000+</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; padding: 30px; background: rgba(34, 197, 94, 0.1); border: 2px solid #22c55e; border-radius: 12px;">
+                <p style="font-size: 24px; color: #d1d5db;">Just 15 clients at $2,000 each = Investment covered</p>
+                <p style="font-size: 20px; color: #9ca3af; margin-top: 12px;">That's LESS than one month of what this system generates</p>
+            </div>
+        </div>
+
+        <!-- Slide 23: Timeline -->
+        <div class="slide">
+            <span class="section-label blue">IMPLEMENTATION</span>
+            <h2>7-10 Day Build Timeline</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-day">
+                        <div class="timeline-day-number">1-3</div>
+                        <div class="timeline-day-label">DAYS</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Front-End Built</div>
+                        <div class="timeline-desc">Funnel, landing pages, VSL script, lead magnet designed</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-day">
+                        <div class="timeline-day-number">4-5</div>
+                        <div class="timeline-day-label">DAYS</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Backend Systems</div>
+                        <div class="timeline-desc">CRM configured, email sequences uploaded, SMS campaigns created</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-day">
+                        <div class="timeline-day-number">6-7</div>
+                        <div class="timeline-day-label">DAYS</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Ads Developed</div>
+                        <div class="timeline-desc">Ad creative developed, scripts written, account structured, Conversion API integrated</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-day" style="background: linear-gradient(135deg, #22c55e, #10b981);">
+                        <div class="timeline-day-number">8-10</div>
+                        <div class="timeline-day-label">DAYS</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Launch Ready</div>
+                        <div class="timeline-desc">Everything tested, final reviews, training delivered, you're live</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="big-number" style="margin-top: 60px;">
+                <div class="big-number-value" style="font-size: 72px;">24hrs</div>
+                <div class="big-number-label">Leads Start Coming In After Launch</div>
+            </div>
+
+            <div class="stats-grid" style="margin-top: 50px;">
+                <div class="stat-card">
+                    <div class="stat-value" style="font-size: 48px;">10-20</div>
+                    <div class="stat-label">Leads Per Day</div>
+                    <div class="stat-desc">Typical volume</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value" style="font-size: 48px;">1-2</div>
+                    <div class="stat-label">Weeks to First Client</div>
+                    <div class="stat-desc">If closing decently</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value" style="font-size: 48px; color: #3b82f6;">✓</div>
+                    <div class="stat-label">Consistent & Predictable</div>
+                    <div class="stat-desc">Not hoping and guessing</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 24: Fulfillment Solution -->
+        <div class="slide">
+            <span class="section-label orange">SCALING</span>
+            <h2>The Fulfillment Bottleneck</h2>
+            
+            <div class="content-box red">
+                <h3 style="color: #ef4444; margin-bottom: 20px;">What Happens When You Scale Without This:</h3>
+                <p style="color: #d1d5db; font-size: 18px; line-height: 1.8; margin-bottom: 20px;">
+                    You go from $10K → $20K/month. Revenue up. But now you're working 12-hour days. Responding to texts at 10 PM. Doing all the repair work. Handling customer service. <span style="color: #ef4444; font-weight: 700;">You've become the bottleneck.</span>
+                </p>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="text-align: center; margin-bottom: 30px; color: #22c55e;">The 3-Part Fulfillment System</h3>
+                <div class="grid-2">
+                    <div class="content-box green">
+                        <h4 style="color: #22c55e;">1. People</h4>
+                        <p style="color: #9ca3af; font-size: 16px;">45+ trained VAs specializing in credit repair/funding. Base-level + managerial oversight.</p>
+                    </div>
+                    <div class="content-box green">
+                        <h4 style="color: #22c55e;">2. Process</h4>
+                        <p style="color: #9ca3af; font-size: 16px;">Standardized SOPs A-Z. Onboarding → delivery → reporting. Quality control before client sees anything.</p>
+                    </div>
+                </div>
+                <div class="content-box green" style="margin-top: 20px;">
+                    <h4 style="color: #22c55e;">3. Visibility</h4>
+                    <p style="color: #9ca3af; font-size: 16px;">Custom dashboards showing every client's status, real-time updates, automated reporting to you and clients. AI chatbot handles 80% of customer service questions.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(34, 197, 94, 0.15); border: 2px solid #22c55e; border-radius: 12px;">
+                <p style="font-size: 32px; color: #22c55e; font-weight: 700; margin-bottom: 16px;">Scale to $50K, $75K, $100K/month</p>
+                <p style="font-size: 24px; color: #d1d5db;">Without the business consuming your life</p>
+                <p style="font-size: 20px; color: #9ca3af; margin-top: 16px;">You focus on: Sales. Strategy. Growth. That's it.</p>
+            </div>
+        </div>
+
+        <!-- Slide 25: Who This Is For -->
+        <div class="slide">
+            <span class="section-label purple">QUALIFICATION</span>
+            <h2>Is This For You?</h2>
+            
+            <div class="comparison-grid">
+                <div class="comparison-good">
+                    <div class="comparison-label good">✓ THIS IS FOR YOU IF:</div>
+                    <ul class="checklist">
+                        <li>Currently doing $5K-$15K/month</li>
+                        <li>Ready to scale to $30K-$75K/month</li>
+                        <li>Tired of competing on price</li>
+                        <li>Sick of broke leads</li>
+                        <li>Willing to invest in yourself</li>
+                        <li>Coachable and ready to implement</li>
+                        <li>Willing to go to hell and back for your goals</li>
+                    </ul>
+                </div>
+                
+                <div class="comparison-bad">
+                    <div class="comparison-label bad">✕ NOT FOR YOU IF:</div>
+                    <ul class="checklist negative">
+                        <li>Looking for magic button or get-rich-quick</li>
+                        <li>Not willing to invest money or time</li>
+                        <li>Not coachable, think you know everything</li>
+                        <li>Collecting courses you never implement</li>
+                        <li>Not serious about scaling</li>
+                        <li>Comfortable staying where you are</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px; padding: 50px; background: rgba(168, 85, 247, 0.1); border: 2px solid #a855f7; border-radius: 12px;">
+                <h3 style="color: #a855f7; font-size: 36px; margin-bottom: 20px;">I Only Want To Work With People Who Are ALL IN.</h3>
+                <p style="font-size: 20px; color: #d1d5db; line-height: 1.8;">Because I'm all in on YOU. I'm giving you my time, my systems, my team, my attention. I expect the same level of commitment in return.</p>
+            </div>
+        </div>
+
+        <!-- Slide 26: The Real Cost -->
+        <div class="slide">
+            <span class="section-label red">OPPORTUNITY COST</span>
+            <h2>What It Costs You NOT To Do This</h2>
+            
+            <div class="content-box red">
+                <div class="grid-2">
+                    <div>
+                        <h3 style="color: #ef4444; margin-bottom: 20px;">Current State</h3>
+                        <div class="big-number-value" style="font-size: 56px; color: #ef4444;">$8,500</div>
+                        <div class="big-number-label" style="font-size: 18px; color: #9ca3af;">Per Month</div>
+                        <div style="margin-top: 20px; padding: 20px; background: rgba(0,0,0,0.3); border-radius: 8px;">
+                            <p style="font-size: 48px; font-weight: 800; color: #ef4444;">$102,000</p>
+                            <p style="font-size: 16px; color: #9ca3af;">Per Year</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="color: #22c55e; margin-bottom: 20px;">With System Installed</h3>
+                        <div class="big-number-value" style="font-size: 56px; color: #22c55e;">$40,000</div>
+                        <div class="big-number-label" style="font-size: 18px; color: #9ca3af;">Per Month</div>
+                        <div style="margin-top: 20px; padding: 20px; background: rgba(34, 197, 94, 0.1); border-radius: 8px;">
+                            <p style="font-size: 48px; font-weight: 800; color: #22c55e;">$480,000</p>
+                            <p style="font-size: 16px; color: #9ca3af;">Per Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="revenue-display" style="margin-top: 50px;">
+                <div class="revenue-amount">$378,000</div>
+                <div class="revenue-label">That's The REAL Cost of Not Doing This</div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <ul class="problem-list">
+                    <li>Every month you wait = another $30K-$40K left on the table</li>
+                    <li>Every week you delay = another $7K-$10K that could be in your bank</li>
+                    <li>While you're figuring it out... competitors are at $50K/month hiring teams</li>
+                    <li>The gap is only getting wider</li>
+                </ul>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(239, 68, 68, 0.1); border: 2px solid #ef4444; border-radius: 12px;">
+                <p style="font-size: 32px; color: #ef4444; font-weight: 700;">Time is the enemy here. Not money.</p>
+                <p style="font-size: 24px; color: #d1d5db; margin-top: 12px;">Money you can make back. Time you can't.</p>
+            </div>
+        </div>
+
+        <!-- Slide 27: The Scaling Blueprint Call -->
+        <div class="slide">
+            <span class="section-label green">NEXT STEP</span>
+            <h2>Book Your Scaling Blueprint Session</h2>
+            
+            <div class="cta-box">
+                <div class="cta-title">Schedule Your FREE Blueprint Call</div>
+                <div class="cta-subtitle">Completely free. Walk away with actionable plan. No obligation.</div>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <h3 style="margin-bottom: 30px; text-align: center;">What Happens On The Call:</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-day" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); width: 80<div class="timeline-item">
+                    <div class="timeline-day" style="background: linear-gradient(135deg, #8b5cf6, #a855f7); width: 80px; height: 80px;">
+                        <div class="timeline-day-number" style="font-size: 28px;">2</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Identify Gaps</div>
+                        <div class="timeline-desc">The invisible problems costing you thousands monthly. Things you don't know you don't know.</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-day" style="background: linear-gradient(135deg, #a855f7, #22c55e); width: 80px; height: 80px;">
+                        <div class="timeline-day-number" style="font-size: 28px;">3</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Custom Roadmap</div>
+                        <div class="timeline-desc">Exactly how Client Attraction Funnel installs in YOUR business. Market positioning, ad strategy, funnel structure, 90-day trajectory.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; padding: 40px; background: rgba(249, 115, 22, 0.1); border: 2px solid #f97316; border-radius: 12px;">
+            <p style="font-size: 24px; color: #f97316; font-weight: 700; margin-bottom: 16px;">One Condition:</p>
+            <p style="font-size: 20px; color: #d1d5db;">If I give you this blueprint, you must PROMISE you'll use it. Don't waste my time if you're not willing to implement.</p>
+        </div>
+    </div>
+
+    <!-- Slide 28: Final Recap -->
+    <div class="slide">
+        <span class="section-label green">RECAP</span>
+        <h2>The Client Attraction Funnel</h2>
+        
+        <div class="pillars-grid">
+            <div class="pillar-card">
+                <div class="pillar-number">1</div>
+                <div class="pillar-title">Unique Mechanism</div>
+                <div class="pillar-desc">Market repositioning. Breaks categorization. Creates price elasticity. Positions you as specialist.</div>
+            </div>
+            
+            <div class="pillar-card">
+                <div class="pillar-number">2</div>
+                <div class="pillar-title">Paid Ads System</div>
+                <div class="pillar-desc">Facebook AI + Conversion API. $7.76 cost per call. Filters out broke leads. Scales profitably.</div>
+            </div>
+            
+            <div class="pillar-card">
+                <div class="pillar-number">3</div>
+                <div class="pillar-title">Authority Funnel</div>
+                <div class="pillar-desc">Pre-sells prospects. 70% show rates. 35% close rates. Selling happens BEFORE the call.</div>
+            </div>
+            
+            <div class="pillar-card">
+                <div class="pillar-number">4</div>
+                <div class="pillar-title">Backend System</div>
+                <div class="pillar-desc">Converts 30-40% of dead leads. Automated nurturing. Personalized sequences. Always working.</div>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px;">
+            <h3 style="text-align: center; margin-bottom: 30px;">What You Get:</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">10-20</div>
+                    <div class="stat-label">Calls Per Day</div>
+                    <div class="stat-desc">From $30 ad spend</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">2-3X</div>
+                    <div class="stat-label">Price Increase</div>
+                    <div class="stat-desc">Same service</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">7-10</div>
+                    <div class="stat-label">Days to Live</div>
+                    <div class="stat-desc">Complete system</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="revenue-display" style="margin-top: 50px;">
+            <div class="revenue-amount">$30K-$75K</div>
+            <div class="revenue-label">Monthly Revenue • Proven System • Built For You</div>
+        </div>
+    </div>
+
+    <!-- Slide 29: Final CTA -->
+    <div class="slide">
+        <div class="title-slide">
+            <h1 style="font-size: 64px; margin-bottom: 40px;">Are You Ready To <span class="highlight">Install It?</span></h1>
+            <p style="font-size: 28px; color: #d1d5db; max-width: 900px; margin: 0 auto 60px; line-height: 1.6;">
+                This is the fastest, most proven path to a $75K/month credit and funding business.
+            </p>
+            
+            <div class="cta-box" style="max-width: 800px; margin: 0 auto;">
+                <div class="cta-title" style="font-size: 36px;">Click Below To Book Your Call</div>
+                <div class="cta-subtitle" style="font-size: 18px;">Answer a few questions. Schedule your Scaling Blueprint Session. I'll see you there.</div>
+            </div>
+
+            <p style="font-size: 20px; color: #9ca3af; margin-top: 60px; font-style: italic;">
+                Limited spots available • Serious applicants only
+            </p>
+        </div>
+    </div>
+</div>
+
+<button class="nav-button prev" onclick="changeSlide(-1)">‹</button>
+<button class="nav-button next" onclick="changeSlide(1)">›</button>
+<div class="slide-counter"><span id="current-slide">1</span> / <span id="total-slides">29</span></div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    
+    document.getElementById('total-slides').textContent = totalSlides;
+
+    function showSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (n + totalSlides) % totalSlides;
+        slides[currentSlide].classList.add('active');
+        document.getElementById('current-slide').textContent = currentSlide + 1;
+    }
+
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') changeSlide(-1);
+        if (e.key === 'ArrowRight') changeSlide(1);
+    });
+
+    document.querySelector('.slideshow-container').addEventListener('click', (e) => {
+        if (!e.target.classList.contains('nav-button')) {
+            changeSlide(1);
+        }
+    });
+</script>
+</body>
+</html>
